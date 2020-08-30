@@ -4,4 +4,4 @@ def tam_bolen(sayi):
             print(i,end=" ")
 
 sayi = int(input("Sayi : "))
-tam_bolen(sayi) l,jh;l
+tam_bolen(sayi)
