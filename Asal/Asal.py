@@ -20,6 +20,9 @@ while True:
 
     if int(sayi)<=0:
         print("Pozitif bir sayi giriniz...")
+    elif int(sayi)==1:
+        print("Farkli bir sayi giriniz")
+        continue
     elif sayi == "q":
         break
     else:
