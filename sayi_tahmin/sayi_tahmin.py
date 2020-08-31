@@ -20,6 +20,9 @@ hak=7
 while True:
     tahmin = int(input("Tahmininiz : "))
 
+    if hak==0:
+        print("Hakkiniz Bitti...")
+        break
     if tahmin < sayi:
         print("Bilgiler Sorgulaniyor...")
         time.sleep(1)
@@ -31,7 +34,7 @@ while True:
         print("Daha kucuk bir sayi giriniz...")
         hak-=1
     else :
-        print("Bilgiler Sorgulaniyor",end=" .")
+        print("Bilgiler Sorgulaniyor",end=" . ")
         time.sleep(1)
         print(".",end=" ")
         time.sleep(1)
@@ -40,6 +43,3 @@ while True:
         print("Tebrikler Dogru Tahmin Ettiniz")
         break
 
-    if hak==0:
-        print()
-        break
