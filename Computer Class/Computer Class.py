@@ -25,4 +25,16 @@ print("""
 while True:
 
     islem = input("Isleminizi Seciniz : ")
-    
+
+    if (islem == "1"):
+        print(computer)
+
+    elif (islem == "2")
+        miktar = int(input("Arttirmak istediginiz miktari giriniz : "))
+        computer.hafiza_arttir(miktar)
+
+    elif (islem == "3")
+        print("Cikiliyor...")
+        break
+
+    else
