@@ -10,4 +10,19 @@ class Computer():
 
     def __str__(self):
         return "Marka : {}\nIslemci : {},Hafiza : {}".format(self.marka,self.islemci,self.hafiza)
+
+computer = Computer("Asus","i7",1000)
+
+print("""
+        Computer
+
+1. Ozellikleri
+
+2. Hafiza Artir
+
+3. Cikis        
+""")
+while True:
+
+    islem = input("Isleminizi Seciniz : ")
     
