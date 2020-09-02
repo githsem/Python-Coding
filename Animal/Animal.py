@@ -30,7 +30,13 @@ class At(Hayvan):
         self.cins = cins
     def kisne(self):
         print("{} kisniyor...".format(self.ad))
-        
+    def bilgiler(self):
+        print("Ad : {}\nAyak : {}\nCins : {}".format(self.ad,self.ayak_sayisi,self.cins))
+
+class Tay(At):
+    def __init__(self, ad, ayak_sayisi, cins):
+        super().__init__(ad, ayak_sayisi,cins)
+
 
 kopek = Kopek("Karabas",4,"Beyaz")
 kopek.havla(3)
@@ -40,4 +46,10 @@ kus.uc()
 
 at = At("Tom",4,"Ingiliz")
 at.kisne()
+
+kopek.bilgiler()
+kus.bilgiler()
+at.bilgiler()
+tay =Tay("Jo",4,"Arap")
+tay.bilgiler()
 
