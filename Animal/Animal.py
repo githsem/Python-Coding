@@ -2,6 +2,8 @@ class Hayvan():
     def __init__(self,ad,ayak_sayisi):
         self.ad = ad
         self.ayak_sayisi = ayak_sayisi
+    def bilgiler(self):
+        print("Ad : {}\nAyak : {}".format(self.ad,self.ayak_sayisi))
 
 class Kopek(Hayvan):
     def __init__(self,ad,ayak_sayisi,renk):
@@ -10,6 +12,8 @@ class Kopek(Hayvan):
     def havla(self,sayi):
         self.sayi = sayi
         print("{} {}  kere havladi".format(self.ad,self.sayi))
+    def bilgiler(self):
+        print("Ad : {}\nAyak : {}\nRenk : {}".format(self.ad,self.ayak_sayisi,self.renk))
 
 class Kus(Hayvan):
     def __init__(self,ad,ayak_sayisi,kanat):
@@ -17,6 +21,8 @@ class Kus(Hayvan):
         self.kanat = kanat
     def uc(self):
         print("{} ucuyor...".format(self.ad))
+    def bilgiler(self):
+        print("Ad : {}\nAyak : {}\nKanat : {}".format(self.ad,self.ayak_sayisi,self.kanat))
 
 class At(Hayvan):
     def __init__(self,ad,ayak_sayisi,cins):
@@ -24,7 +30,14 @@ class At(Hayvan):
         self.cins = cins
     def kisne(self):
         print("{} kisniyor...".format(self.ad))
+        
 
 kopek = Kopek("Karabas",4,"Beyaz")
 kopek.havla(3)
+
+kus = Kus("Serce",2,2)
+kus.uc()
+
+at = At("Tom",4,"Ingiliz")
+at.kisne()
 
