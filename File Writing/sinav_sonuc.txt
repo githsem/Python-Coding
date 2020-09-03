@@ -1,4 +1,5 @@
 ali yilmaz-------->AA
 veli kara-------->BB
 mehmet ak-------->CB
-merve kar-------->FF
+merve kar-------->BB
+merve kar-------->BB
