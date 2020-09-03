@@ -38,6 +38,5 @@ with open("sinav.txt", "r", encoding ="UTf-8") as file:
        eklenecekler_listesi.append(not_hesapla(i))
 
     with open("sinav_sonuc.txt", "w", encoding="UTf-8") as file2:
-        for i in eklenecekler_listesi:
-            file2.write(i)
+        file2.writelines(eklenecekler_listesi)
 
