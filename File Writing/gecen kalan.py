@@ -1,7 +1,4 @@
 with open("sinav_sonuc.txt", "r", encoding ="UTf-8") as file:
-    gecenler = []
-    kalanlar = []
-
     for i in file:
         isim = i
         i = i[-3:-1]
