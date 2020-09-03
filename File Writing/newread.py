@@ -10,3 +10,10 @@ with open("bilgi.txt","r",encoding ="UTf-8") as file:
 with open("bilgi.txt","r",encoding ="UTf-8") as file:
     file.seek(2)
     print(file.read(5))
+
+with open("bilgi.txt","r+",encoding ="UTf-8") as file:
+    file.seek(5)
+    file.write("degistirildi")
+
+with open("bilgi.txt","r",encoding ="UTf-8") as file:
+    print(file.read())
