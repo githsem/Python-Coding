@@ -6,7 +6,7 @@ def not_hesapla(satir):
     not1 = int(liste[1])
     not2 = int(liste[2])
     not3 = int(liste[3])
-    son_not = not1*(30/10) + not2*(30/10) + not3*(40/10)
+    son_not = not1*(3/10) + not2*(3/10) + not3*(4/10)
 
     if son_not >= 90:
         harf = "AA"
@@ -30,12 +30,12 @@ def not_hesapla(satir):
     return isim + "-------->" + harf +  "\n"
 
 
+
 with open("sinav.txt", "r", encoding ="UTf-8") as file:
     eklenecekler_listesi = []
 
     for i in file:
        eklenecekler_listesi.append(not_hesapla(i))
-    print(eklenecekler_listesi)
 
     with open("sinav_sonuc.txt", "w", encoding="UTf-8") as file2:
         for i in eklenecekler_listesi:

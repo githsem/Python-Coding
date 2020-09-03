@@ -1,4 +1,4 @@
-ali yilmaz,40,60,70
-veli kara,30,20,90
-mehmet ak,70,20,50
-merve kar,50,70,80
+ali yilmaz,100,80,100
+veli kara,80,70,90
+mehmet ak,60,70,90
+merve kar,60,60,80
