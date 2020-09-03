@@ -9,3 +9,7 @@ icerik = file.read()
 print(icerik)
 file.close()
 
+file = open("bilgi.txt","r",encoding="UTF-8")
+liste = file.readlines()
+print(liste)
+file.close()
