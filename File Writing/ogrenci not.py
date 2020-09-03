@@ -24,7 +24,7 @@ def not_hesapla(satir):
         harf = "DD"
     elif son_not >= 55:
         harf = "FD"
-    elif son_not<55:
+    else:
         harf = "FF"
 
     return isim + "-------->" + harf +  "\n"
