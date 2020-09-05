@@ -32,5 +32,4 @@ class Dosya():
 
 
 dosya = Dosya()
-dosya.tum_kelimeler()
 dosya.kelime_frekansi()
