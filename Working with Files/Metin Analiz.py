@@ -20,16 +20,23 @@ class Dosya():
             print(i)
 
     def kelime_frekansi(self):
-        kelime_sozluk = dict()
+        self.kelime_sozluk = dict()
 
         for i in self.sade_kelimeler:
-            if i in kelime_sozluk:
-                kelime_sozluk[i] +=1
+            if i in self.kelime_sozluk:
+                self.kelime_sozluk[i] +=1
             else:
-                kelime_sozluk[i] = 1
+                self.kelime_sozluk[i] = 1
         for kelime,sayi in kelime_sozluk.items():
             print("{} ifadesi {} defa geciyor".format(kelime,sayi))
 
+    def kelime_ara(self,kelime):
+        self.kelime = kelime
+        for i in self.kelime_sozluk.items():
+            if i = self.kelime:
+                print("{} kelimesi {} defa geciyor")
+            else:
+                print("Boyle bir kelime bulunmamaktadir")
 
 dosya = Dosya()
-dosya.kelime_frekansi()
+dosya.kelime_ara()
