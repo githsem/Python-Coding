@@ -46,4 +46,4 @@ class Dosya():
 
 dosya = Dosya()
 dosya.kelime_frekansi()
-dosya.kelime_ara("olan ")
+dosya.kelime_ara("olan")
