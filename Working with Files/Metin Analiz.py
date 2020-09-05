@@ -14,9 +14,10 @@ class Dosya():
 
     def tum_kelimeler(self):
         kelimeler_kumesi = set()
-        for i in self.sade_kelimeler(
+        for i in self.sade_kelimeler:
             kelimeler_kumesi.add(i)
-        for i in     
+        for i in kelimeler_kumesi:
+            print(i)
 
 
 dosya = Dosya()
