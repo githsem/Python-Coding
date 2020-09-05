@@ -20,8 +20,16 @@ class Dosya():
             print(i)
 
     def kelime_frekansi(self):
-        
+        kelime_sozluk = dict()
+
+        for i in self.sade_kelimeler:
+            if i in kelime_sozluk:
+                kelime_sozluk[i] +=1
+            else:
+                kelime_sozluk[i] = 1
+        print(kelime_sozluk)
 
 
 dosya = Dosya()
 dosya.tum_kelimeler()
+dosya.kelime_frekansi()
