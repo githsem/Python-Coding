@@ -27,7 +27,8 @@ class Dosya():
                 kelime_sozluk[i] +=1
             else:
                 kelime_sozluk[i] = 1
-        print(kelime_sozluk)
+        for kelime,sayi in kelime_sozluk.items():
+            print("{} ifadesi {} kadar geciyor".format(kelime,sayi))
 
 
 dosya = Dosya()
