@@ -21,3 +21,4 @@ class Dosya():
 
 
 dosya = Dosya()
+dosya.tum_kelimeler()
