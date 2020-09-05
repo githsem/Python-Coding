@@ -7,4 +7,4 @@ liste = list(zip(isimler,soyisimler))
 for i in liste:
     print(i[0])
     print(i[1])
-    print("---------")
+    print("----------")
