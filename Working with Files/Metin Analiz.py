@@ -1,5 +1,6 @@
 class Dosya():
     def __init__(self):
+        self.kelime_sozluk = dict()
         with open("metin.txt","r",encoding = "utf-8") as file:
             dosya_icerigi = file.read()
             kelimeler = dosya_icerigi.split()
@@ -20,7 +21,6 @@ class Dosya():
             print(i)
 
     def kelime_frekansi(self):
-        self.kelime_sozluk = dict()
 
         for i in self.sade_kelimeler:
             if i in self.kelime_sozluk:
@@ -32,14 +32,18 @@ class Dosya():
 
     def kelime_ara(self,kelime):
         self.kelime = kelime
+        sayac = 0
         for i,j in self.kelime_sozluk.items():
             if i == self.kelime:
                 print("{} kelimesi {} defa geciyor".format(i,j))
+                sayac = -1
                 break
             else:
-                print("Boyle bir kelime bulunmamaktadir",i)
-                break
+                sayac +=1
+        if sayac > 0:
+            print("Boyle bir kelime bulunmamaktadir")
+
 
 dosya = Dosya()
 dosya.kelime_frekansi()
-dosya.kelime_ara("olan")
+dosya.kelime_ara("olan ")
