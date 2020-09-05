@@ -19,6 +19,9 @@ class Dosya():
         for i in kelimeler_kumesi:
             print(i)
 
+    def kelime_frekansi(self):
+        
+
 
 dosya = Dosya()
 dosya.tum_kelimeler()
