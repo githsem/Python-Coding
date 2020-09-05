@@ -1,6 +1,5 @@
 with open("siir.txt","r",encoding="utf-8") as file:
-    satir = file.readlines()
     string = ""
-    for i in satir:
+    for i in file:
         string +=i[0]
     print(string)
