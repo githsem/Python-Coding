@@ -52,7 +52,7 @@ class Sarkilar():
 
         self.baglanti.commit()
 
-    def sure_hesapla(self, sarkilar):
+    def sure_hesapla(self):
 
         sorgu = "Select * From sarkilar"
 

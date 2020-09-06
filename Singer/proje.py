@@ -18,13 +18,13 @@ print("""
 sarkilar = Sarkilar()
 
 while True:
-    işlem = input("Yapacağınız İşlem:")
+    islem = input("Yapacağınız İşlem:")
 
-    if (işlem == "q"):
+    if (islem == "q"):
         print("Program Sonlandırılıyor.....")
         print("Yine bekleriz....")
         break
-    elif (işlem == "1"):
+    elif (islem == "1"):
         isim = input("İsim:")
         sanatci = input("Sanatci:")
         album = input("Album:")
@@ -38,4 +38,17 @@ while True:
 
         sarkilar.sarki_ekle(yeni_sarki)
         print("Sarki Eklendi....")
+    elif (islem == "2"):
+        isim = input("Hangi sarkiyi silmek istiyorsunuz ?")
+
+        cevap = input("Emin misiniz ? (E/H)")
+        if (cevap == "E"):
+            print("Sarki Siliniyor...")
+            time.sleep(2)
+            sarkilar.sarki_sil(isim)
+            print("Sarki silindi....")
+    elif(islem == "3"):
+        sarkilar.sure_hesapla()
+
+
 
