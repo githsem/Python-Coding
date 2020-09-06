@@ -1,0 +1,6 @@
+file = open("bilgi.txt","w",encoding ="UTf-8")
+file.write("Merhabalar\n")
+file.close()
+file = open("bilgi.txt","a",encoding ="UTf-8")
+file.write("Nasilsiniz\n")
+file.close()
