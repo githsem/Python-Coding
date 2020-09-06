@@ -65,5 +65,5 @@ class Sarkilar():
         else:
             sure=0
             for i in sarkilar:
-                sure += sarkilar[4]
+                sure += sarkilar[0][4]
         print("Toplam Sure : ",sure)
