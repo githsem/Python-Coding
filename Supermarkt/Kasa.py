@@ -7,7 +7,9 @@ Supermarkt Programi
 
 2. Urunleri Goster
 
-3. Cikis
+3. Urun Adeti Ekle
+
+4. Cikis
 """)
 supermarkt = Supermarkt()
 
@@ -22,5 +24,12 @@ while True:
         print("Urun Eklendi")
     if islem == "2":
         supermarkt.goster()
-    if islem == "3":
+
+    if islem =="3":
+        ad = input("Urun Adi : ")
+        adet = int(input("Eklemek Istediginiz Miktar : "))
+        supermarkt.adet_ekle(ad,adet)
+        print("Miktar Eklendi")
+
+    if islem == "4":
         break

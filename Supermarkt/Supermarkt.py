@@ -29,3 +29,13 @@ class Supermarkt():
         sorgu = "INSERT INTO supermarkt VALUES(?,?)"
         self.cursor.execute(sorgu,(yeni_urun.ad,yeni_urun.adet))
         self.baglanti.commit()
+
+    def adet_ekle(self,ad,adet):
+        sorgu = "SELECT * FROM supermarkt WHERE ad = ?"
+        self.cursor.execute(sorgu,(ad,))
+        urun = self.cursor.fetchall()
+        miktar = urun[0][1]
+        adet += miktar
+        sorgu = "UPDATE supermarkt SET adet = ? WHERE ad = ? "
+        self.cursor.execute(sorgu,(adet,ad))
+        self.baglanti.commit()
