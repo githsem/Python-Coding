@@ -11,7 +11,7 @@ Supermarkt Programi
 """)
 supermarkt = Supermarkt()
 
-While True:
+while True:
     islem = input("Islem Seciniz :")
 
     if islem == "1":
@@ -22,5 +22,5 @@ While True:
         print("Urun Eklendi")
     if islem == "2":
         supermarkt.goster()
-    if islem == "3"
+    if islem == "3":
         break

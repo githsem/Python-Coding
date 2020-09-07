@@ -12,7 +12,7 @@ class Supermarkt():
     def baglanti_olustur(self):
         self.baglanti = sqlite3.connect("supermarkt.db")
         self.cursor = self.baglanti.cursor()
-        sorgu = "CREATE TABLE IF NOT EXISTS supermarkt(ad TEXT,adet INT"
+        sorgu = "CREATE TABLE IF NOT EXISTS supermarkt(ad TEXT,adet INT)"
         self.cursor.execute(sorgu)
         self.baglanti.commit()
 
@@ -26,6 +26,6 @@ class Supermarkt():
             print("Urun Adi : {}\nUrun Adeti : {}".format(urunler.ad,urunler.adet))
 
     def urun_ekle(self,yeni_urun):
-        sorgu = "INSERT INTO KUTUPHANE VALUES(?,?)"
+        sorgu = "INSERT INTO supermarkt VALUES(?,?)"
         self.cursor.execute(sorgu,(yeni_urun.ad,yeni_urun.adet))
         self.baglanti.commit()
