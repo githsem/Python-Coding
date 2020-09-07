@@ -22,6 +22,7 @@ while True:
         yeni_urun = Urunler(ad,adet)
         supermarkt.urun_ekle(yeni_urun)
         print("Urun Eklendi")
+        
     if islem == "2":
         supermarkt.goster()
 
