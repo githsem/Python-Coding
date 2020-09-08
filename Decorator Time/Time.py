@@ -22,4 +22,4 @@ def kup_hesapla(sayilar):
         sonuc.append(i**3)
     return sonuc
 
-kare_hesapla(range(1,100))
+kare_hesapla(range(100))
