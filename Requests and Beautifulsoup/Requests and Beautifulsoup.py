@@ -8,4 +8,5 @@ html_icerigi = response.content
 
 soup = BeautifulSoup(html_icerigi,"html.parser")
 
-print(soup.prettify())
+for i in soup.find_all("a"):
+    print(i.get("href"))
