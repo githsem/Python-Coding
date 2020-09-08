@@ -6,5 +6,5 @@ tarih = datetime.now()
 suan = tarih.timestamp()
 print(suan)
 
-suan2 = tarih.fromtimestamp(suan)
+suan2 = tarih.fromtimestamp(0)
 print(suan2)
