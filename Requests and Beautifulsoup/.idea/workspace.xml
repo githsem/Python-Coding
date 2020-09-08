@@ -25,6 +25,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,5 +37,11 @@
       <updated>1599604996947</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="199" y="9" key="SettingsEditor" timestamp="1599606227166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="199" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599606227166" />
   </component>
 </project>
