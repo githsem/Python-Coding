@@ -13,7 +13,8 @@ def extra(func):
                 tek_sayilar += sayi
         print("Tek sayilar ortalamasi : ",tek_sayilar/tek_sayi)
         print("Cift sayilar ortalamasi : ",cift_sayilar/cift_sayi)
-        
+        func(sayilar)
+    return wrapper
 
 
 
