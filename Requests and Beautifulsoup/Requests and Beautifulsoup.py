@@ -8,5 +8,4 @@ html_icerigi = response.content
 
 soup = BeautifulSoup(html_icerigi,"html.parser")
 
-for i in soup.find_all("a"):
-    print(i.get("href"))
+print(soup.find_all("div",{"class":"yp-poi-box-2" }))
