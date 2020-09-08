@@ -1,3 +1,3 @@
 from datetime import datetime
 tarih = datetime.now()
-print(datetime.ctime(tarih))
+print(datetime.strftime(tarih,"%B"))
