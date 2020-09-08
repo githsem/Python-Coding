@@ -5,18 +5,21 @@ def zaman_hesapla(func):
         sonuc = func()
         bitis = time.time()
         print(func.__name__+ " " + str(bitis-baslama) + "saniye surdu")
+        return sonuc
+    return wrapper
 
-
-
+@zaman_hesapla
 def kare_hesapla(sayilar):
     sonuc =[]
     for i in sayilar:
         sonuc.append(i**2)
     return sonuc
+
+@zaman_hesapla
 def kup_hesapla(sayilar):
     sonuc =[]
     for i in sayilar:
         sonuc.append(i**3)
     return sonuc
 
-kare_hesapla(range(100))
+kare_hesapla(range(1,100))
