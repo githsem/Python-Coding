@@ -24,4 +24,6 @@ def kup_hesapla(sayilar):
     return sonuc
 
 kare_hesapla(range(10000))
+kare_hesapla(range(1000000))
+kup_hesapla(range(10000))
 kup_hesapla(range(10000))
