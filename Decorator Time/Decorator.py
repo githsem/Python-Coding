@@ -18,7 +18,7 @@ def extra(func):
 
 
 
-
+@extra
 def ortalama_hesapla(sayilar):
     toplam = 0
     for sayi in sayilar:
