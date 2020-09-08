@@ -1,8 +1,9 @@
 import time
+
 def zaman_hesapla(func):
     def wrapper(sayilar):
         baslama = time.time()
-        sonuc = func()
+        sonuc = func(sayilar)
         bitis = time.time()
         print(func.__name__+ " " + str(bitis-baslama) + "saniye surdu")
         return sonuc
@@ -22,4 +23,5 @@ def kup_hesapla(sayilar):
         sonuc.append(i**3)
     return sonuc
 
-kare_hesapla(range(100))
+kare_hesapla(range(10000))
+kup_hesapla(range(10000))
