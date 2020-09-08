@@ -8,5 +8,4 @@ html_icerigi = response.content
 
 soup = BeautifulSoup(html_icerigi,"html.parser")
 
-for i in soup.find_all("div"):
-    print(i)
+print(soup.prettify())
