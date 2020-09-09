@@ -19,4 +19,6 @@ for baslik,rating in zip(basliklar,ratingler):
     rating = rating.strip()
     rating = rating.replace("\n","")
 
-    print(baslik,rating)
+    print("Film Adi : ",baslik)
+    print("Rating : ",rating)
+    print("***********************************************************")
