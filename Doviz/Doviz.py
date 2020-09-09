@@ -13,9 +13,10 @@ soup = BeautifulSoup(html_icerigi,"html.parser")
 isim = soup.find_all("span",{"class":"name"})
 kur =soup.find_all("span",{"class":"value"})
 
-
 for i,j in zip(isim,kur):
     i = i.text
     j = j.text
-    if i = "EURO":
-        print(j)
+    if i ==  "GRAM ALTIN":
+        print("Gram Altın in Suanki Fiyati : ",j)
+    if i ==  "EURO":
+        print("EURO nun Suanki Fiyati : ",j)
