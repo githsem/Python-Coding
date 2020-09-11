@@ -32,7 +32,8 @@ class Pencere(QtWidgets.QWidget):
         if sender.text() == "Temizle":
             self.yazi_alani.clear()
         else:
-            print(self.yazi_alani.text())
+            harfler = self.yazi_alani.text()
+            for i in harfler
 
 
 app = QtWidgets.QApplication(sys.argv)
