@@ -33,8 +33,7 @@ class Pencere(QtWidgets.QWidget):
             self.yazi_alani.clear()
         else:
             harfler = self.yazi_alani.text()
-            print("Girdiginiz Metnin Tersi")
-            print(harfler[::-1])
+            
 
 
 app = QtWidgets.QApplication(sys.argv)
