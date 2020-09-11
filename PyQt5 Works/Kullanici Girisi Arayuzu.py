@@ -13,7 +13,8 @@ class Pencere(QtWidgets.QWidget):
         baglanti = sqlite3.connect("database.db")
         self.cursor = baglanti.cursor()
 
-        se
+        self.cursor.execute("CREATE TABLE IF NOT EXISTS uyeler(kullanici_adi TEXT,parola TEXT")
+        baglanti.commit()
 
     def init_ui(self):
         self.kullanici_adi = QtWidgets.QLineEdit()
@@ -39,8 +40,9 @@ class Pencere(QtWidgets.QWidget):
         self.setLayout(h_box)
 
         self.setWindowTitle("Kullanici Girisi")
-
+        self.giris.clicked.connect(self.login)
         self.show()
+    def login(self):
 
 
 app = QtWidgets.QApplication(sys.argv)
