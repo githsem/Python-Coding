@@ -11,7 +11,7 @@ class Pencere(QtWidgets.QWidget):
     def init_ui(self):
         self.kullanici_adi = QtWidgets.QLineEdit()
         self.parola = QtWidgets.QLineEdit()
-        self.parola.echoMode(QtWidgets.QLineEdit.Password)
+        self.parola.setEchoMode(QtWidgets.QLineEdit.Password)
         self.giris = QtWidgets.QPushButton("Giris")
         self.yazi_alani = QtWidgets.QLabel("")
 
@@ -24,6 +24,7 @@ class Pencere(QtWidgets.QWidget):
         v_box.addWidget(self.giris)
 
         h_box = QtWidgets.QHBoxLayout()
+
         h_box.addStretch()
         h_box.addLayout(v_box)
         h_box.addStretch()
@@ -35,6 +36,6 @@ class Pencere(QtWidgets.QWidget):
         self.show()
 
 
-app = QtWidgets.QApplication()
+app = QtWidgets.QApplication(sys.argv)
 pencere = Pencere()
 sys.exit(app.exec_())
