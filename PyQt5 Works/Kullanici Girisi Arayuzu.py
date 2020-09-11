@@ -13,7 +13,7 @@ class Pencere(QtWidgets.QWidget):
         baglanti = sqlite3.connect("database.db")
         self.cursor = baglanti.cursor()
 
-        self.cursor.execute("CREATE TABLE IF NOT EXISTS uyeler(kullanici_adi TEXT,parola TEXT")
+        self.cursor.execute("CREATE TABLE IF NOT EXISTS uyeler (kullanici_adi TEXT,parola TEXT)")
         baglanti.commit()
 
     def init_ui(self):
@@ -50,7 +50,10 @@ class Pencere(QtWidgets.QWidget):
 
         data = self.cursor.fetchall()
 
-        
+        if (data==0):
+            self.yazi_alani.setText("Boyle bir kullanici yok\nLutfen tekrar deneyiniz...")
+        else:
+            self.yazi_alani.setText("Hos Geldiniz  ",adi)
 
 
 app = QtWidgets.QApplication(sys.argv)
