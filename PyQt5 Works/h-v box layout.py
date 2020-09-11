@@ -1,6 +1,7 @@
 import sys
 
-from PyQt5 import QtWidgets,QtGui
+from PyQt5 import QtWidgets, QtGui
+
 
 def pencere():
     app = QtWidgets.QApplication(sys.argv)
@@ -13,7 +14,6 @@ def pencere():
     h_box.addWidget(okay)
     h_box.addWidget(cancel)
    
-
     v_box = QtWidgets.QVBoxLayout()
     v_box.addStretch()
     v_box.addLayout(h_box)
@@ -24,8 +24,9 @@ def pencere():
 
 
 
-    pencere.setGeometry(500,200,400,400)
+    pencere.setGeometry(500, 200, 400, 400)
     pencere.show()
     sys.exit(app.exec_())
+
 
 pencere()
