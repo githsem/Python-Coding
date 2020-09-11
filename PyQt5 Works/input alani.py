@@ -33,7 +33,8 @@ class Pencere(QtWidgets.QWidget):
             self.yazi_alani.clear()
         else:
             harfler = self.yazi_alani.text()
-            for i in harfler
+            for i in harfler:
+                print(i)
 
 
 app = QtWidgets.QApplication(sys.argv)
