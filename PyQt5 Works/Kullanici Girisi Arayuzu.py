@@ -6,7 +6,11 @@ from PyQt5 import QtWidgets
 class Pencere(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
+        self.baglanti_olustur()
         self.init_ui()
+
+    def baglanti_olustur(self):
+        
 
     def init_ui(self):
         self.kullanici_adi = QtWidgets.QLineEdit()
