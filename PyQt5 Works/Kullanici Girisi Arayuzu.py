@@ -42,18 +42,19 @@ class Pencere(QtWidgets.QWidget):
         self.setWindowTitle("Kullanici Girisi")
         self.giris.clicked.connect(self.login)
         self.show()
-    def login(self):
-        adi = self.kullanici_adi
-        par = self.parola
 
-        self.cursor.execute("SELECT * FROM WHERE kullanici_adi = ? and parola = ?",(adi,par))
+    def login(self):
+        adi = self.kullanici_adi.text()
+        par = self.parola.text()
+
+        self.cursor.execute("SELECT * FROM uyeler WHERE kullanici_adi = ? and parola = ?", (adi, par))
 
         data = self.cursor.fetchall()
 
-        if (data==0):
+        if len(data) == 0:
             self.yazi_alani.setText("Boyle bir kullanici yok\nLutfen tekrar deneyiniz...")
         else:
-            self.yazi_alani.setText("Hos Geldiniz  ",adi)
+            self.yazi_alani.setText("Hos Geldiniz  " + adi)
 
 
 app = QtWidgets.QApplication(sys.argv)
