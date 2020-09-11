@@ -1,6 +1,7 @@
 import sys
 
-from PyQt5 import QtWidgets,QtGui
+from PyQt5 import QtWidgets, QtGui
+
 
 def pencere():
     app = QtWidgets.QApplication(sys.argv)
@@ -12,12 +13,13 @@ def pencere():
 
     etiket = QtWidgets.QLabel(pencere)
     etiket.setText("Merhaba Dunya")
-    etiket.move(160,30)
-    buton.move(160,50)
+    etiket.move(160, 30)
+    buton.move(160, 50)
 
 
-    pencere.setGeometry(500,200,400,400)
+    pencere.setGeometry(500, 200, 400, 400)
     pencere.show()
     sys.exit(app.exec_())
+
 
 pencere()
