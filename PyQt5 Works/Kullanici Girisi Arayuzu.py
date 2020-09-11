@@ -33,7 +33,7 @@ class Pencere(QtWidgets.QWidget):
         self.setWindowTitle("Kullanici Girisi")
 
         self.show()
-        
+
 
 app = QtWidgets.QApplication()
 pencere = Pencere()
