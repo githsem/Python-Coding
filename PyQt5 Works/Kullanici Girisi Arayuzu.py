@@ -43,6 +43,14 @@ class Pencere(QtWidgets.QWidget):
         self.giris.clicked.connect(self.login)
         self.show()
     def login(self):
+        adi = self.kullanici_adi
+        par = self.parola
+
+        self.cursor.execute("SELECT * FROM WHERE kullanici_adi = ? and parola = ?",(adi,par))
+
+        data = self.cursor.fetchall()
+
+        
 
 
 app = QtWidgets.QApplication(sys.argv)
