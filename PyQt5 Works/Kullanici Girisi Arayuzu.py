@@ -10,7 +10,10 @@ class Pencere(QtWidgets.QWidget):
         self.init_ui()
 
     def baglanti_olustur(self):
-        
+        baglanti = sqlite3.connect("database.db")
+        self.cursor = baglanti.cursor()
+
+        se
 
     def init_ui(self):
         self.kullanici_adi = QtWidgets.QLineEdit()
