@@ -33,7 +33,9 @@ class Pencere(QtWidgets.QWidget):
             self.yazi_alani.clear()
         else:
             harfler = self.yazi_alani.text()
-            
+            for i in harfler:
+                if i == int(i):
+                    print("Girdiginiz Metinde Rakam Bulunmaktadir...")
 
 
 app = QtWidgets.QApplication(sys.argv)
