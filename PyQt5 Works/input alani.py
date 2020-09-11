@@ -34,6 +34,7 @@ class Pencere(QtWidgets.QWidget):
         else:
             print(self.yazi_alani.text())
 
+
 app = QtWidgets.QApplication(sys.argv)
 
 pencere = Pencere()
