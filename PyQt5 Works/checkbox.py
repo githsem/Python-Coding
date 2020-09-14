@@ -23,7 +23,7 @@ class Pencere(QWidget):
 
         self.setWindowTitle("Check Box")
 
-        self.buton.clicked.connect(self.click(self.checkbox.isChecked(), self.yazi_alani))
+        self.buton.clicked.connect(lambda : self.click(self.checkbox.isChecked(), self.yazi_alani))
         self.show()
     def click(self,checkbox,yazi_alani):
         if checkbox:
