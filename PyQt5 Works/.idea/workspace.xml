@@ -28,7 +28,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Bibliothek" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Kullanici Girisi Arayuzu">
+  <component name="RunManager" selected="Python.checkbox">
     <configuration name="Kullanici Girisi Arayuzu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyQt5 Works" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,7 +71,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="buton" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="checkbox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyQt5 Works" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,7 +83,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/buton.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/checkbox.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.checkbox" />
         <item itemvalue="Python.Kullanici Girisi Arayuzu" />
         <item itemvalue="Python.input alani" />
         <item itemvalue="Python.buton ozellik" />
         <item itemvalue="Python.h-v box layout" />
-        <item itemvalue="Python.buton" />
       </list>
     </recent_temporary>
   </component>
