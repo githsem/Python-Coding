@@ -23,8 +23,13 @@ class Pencere(QWidget):
 
         self.setWindowTitle("Check Box")
 
+        self.buton.clicked.connect(self.click(self.checkbox.isChecked(), self.yazi_alani))
         self.show()
-
+    def click(self,checkbox,yazi_alani):
+        if checkbox:
+            yazi_alani.setText("Python'i Seviyorsun Cok Guzel...")
+        else:
+            yazi_alani.setText("Niye Sevmiyorsun...")
 
 app = QApplication(sys.argv)
 
