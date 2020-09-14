@@ -9,7 +9,7 @@ class Pencere(QWidget):
         self.init_ui()
 
     def init_ui(self):
-        self.checkbox =QCheckBox("Python'i Seviyor musunuz ?")
+        self.checkbox = QCheckBox("Python'i Seviyor musunuz ?")
         self.yazi_alani = QLabel("")
         self.buton = QPushButton("Tikla")
 
@@ -25,7 +25,7 @@ class Pencere(QWidget):
 
         self.buton.clicked.connect(lambda : self.click(self.checkbox.isChecked(), self.yazi_alani))
         self.show()
-    def click(self,checkbox,yazi_alani):
+    def click(self, checkbox, yazi_alani):
         if checkbox:
             yazi_alani.setText("Python'i Seviyorsun Cok Guzel...")
         else:
@@ -34,5 +34,4 @@ class Pencere(QWidget):
 app = QApplication(sys.argv)
 
 pencere = Pencere()
-
 sys.exit(app.exec_())
