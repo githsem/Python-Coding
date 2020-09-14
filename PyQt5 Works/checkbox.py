@@ -27,3 +27,5 @@ class Pencere(QWidget):
 app = QApplication(sys.argv)
 
 pencere = Pencere()
+
+sys.exit(app.exec_())
