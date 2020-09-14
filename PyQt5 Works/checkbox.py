@@ -19,4 +19,11 @@ class Pencere(QWidget):
         v_box.addWidget(self.yazi_alani)
         v_box.addWidget(self.buton)
 
-        self.setWindowTitle()
+        self.setWindowTitle("Check Box")
+
+        self.show()
+
+
+app = QApplication(sys.argv)
+
+pencere = Pencere()
