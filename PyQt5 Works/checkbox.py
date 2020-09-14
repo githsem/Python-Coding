@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtWidgets import QWidget,QApplication,QCheckBox,QLabel,QPushButton,QVBoxLayout
+from PyQt5.QtWidgets import QWidget, QApplication, QCheckBox, QLabel, QPushButton, QVBoxLayout
 
 
 class Pencere(QWidget):
@@ -31,7 +31,7 @@ class Pencere(QWidget):
         else:
             yazi_alani.setText("Niye Sevmiyorsun...")
 
-app = QApplication(sys.argv)
 
+app = QApplication(sys.argv)
 pencere = Pencere()
 sys.exit(app.exec_())
