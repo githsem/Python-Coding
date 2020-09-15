@@ -33,7 +33,7 @@ class Pencere(QWidget):
         self.setWindowTitle("Radio Button")
         self.show()
 
-    def click(self,java,python,php,yazi_alani):
+    def click(self, java, python, php,yazi_alani):
         if java:
             yazi_alani.setText("Java")
         if python:
