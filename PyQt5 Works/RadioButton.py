@@ -19,6 +19,7 @@ class Pencere(QWidget):
         self.buton = QPushButton("Gonder")
 
         v_box = QVBoxLayout()
+        v_box.addWidget(self.radio_yazisi)
         v_box.addWidget(self.java)
         v_box.addWidget(self.python)
         v_box.addWidget(self.php)
