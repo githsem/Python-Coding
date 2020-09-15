@@ -1,5 +1,5 @@
 import sys
-import time
+
 
 from PyQt5.QtWidgets import QWidget, QApplication, QTextEdit, QRadioButton, QLabel, QPushButton, QVBoxLayout
 
