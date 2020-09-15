@@ -28,6 +28,7 @@ class Pencere(QWidget):
 
         self.setLayout(v_box)
         self.setWindowTitle("Radio Button")
+        self.show()
 
 
 
