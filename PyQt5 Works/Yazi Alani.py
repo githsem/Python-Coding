@@ -23,6 +23,7 @@ class Pencere(QWidget):
 
     def click(self):
         self.yazi_alani.clear()
+        self.yazi_alani.setText("EKRAN TEMIZLENDI")
 
 
 app = QApplication(sys.argv)
