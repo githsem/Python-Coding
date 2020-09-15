@@ -18,8 +18,10 @@ class Pencere(QWidget):
         v_box.addWidget(self.temizle)
         self.setWindowTitle("Yazi ALani")
         self.setLayout(v_box)
+        self.temizle.clicked.connect(self.click)
         self.show()
-
+    def click(self):
+        self.yazi_alani.clear()
 
 
 app = QApplication(sys.argv)
