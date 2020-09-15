@@ -27,10 +27,18 @@ class Pencere(QWidget):
         v_box.addWidget(self.buton)
 
         self.setLayout(v_box)
+
+        self.buton.clicked.connect(lambda : self.click(self.java.isChecked(),self.python.isChecked(),self.php.isChecked(),self.yazi_alani))
         self.setWindowTitle("Radio Button")
         self.show()
 
-
+    def click(self,java,python,php,yazi_alani):
+        if java:
+            yazi_alani.setText("Java")
+        if python:
+            yazi_alani.setText("Python")
+        if php:
+            yazi_alani.setText("Php")
 
 app = QApplication(sys.argv)
 pencere = Pencere()
