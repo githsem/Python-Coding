@@ -29,7 +29,7 @@ class Pencere(QWidget):
 
         self.setLayout(v_box)
 
-        self.buton.clicked.connect(lambda : self.click(self.java.isChecked(),self.python.isChecked(),self.php.isChecked(),self.yazi_alani))
+        self.buton.clicked.connect(lambda: self.click(self.java.isChecked(), self.python.isChecked(), self.php.isChecked(), self.yazi_alani))
         self.setWindowTitle("Radio Button")
         self.show()
 
