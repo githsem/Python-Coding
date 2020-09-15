@@ -1,4 +1,5 @@
 import sys
+import time
 
 from PyQt5.QtWidgets import QWidget, QApplication, QTextEdit, QRadioButton, QLabel, QPushButton, QVBoxLayout
 
@@ -24,6 +25,7 @@ class Pencere(QWidget):
     def click(self):
         self.yazi_alani.clear()
         self.yazi_alani.setText("EKRAN TEMIZLENDI")
+        time
 
 
 app = QApplication(sys.argv)
