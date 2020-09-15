@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtWidgets import QWidget, QApplication, QRadioButton, QLabel, QPushButton, QVBoxLayout
+from PyQt5.QtWidgets import QWidget, QApplication, QTextEdit, QRadioButton, QLabel, QPushButton, QVBoxLayout
 
 
 class Pencere(QWidget):
@@ -9,8 +9,16 @@ class Pencere(QWidget):
         self.init_ui()
 
     def init_ui(self):
+        self.yazi_alani = QTextEdit()
+        self.temizle = QPushButton("Temizle")
 
-        
+        v_box = QVBoxLayout()
+
+        v_box.addWidget(self.yazi_alani)
+        v_box.addWidget(self.temizle)
+
+
+
 app = QApplication(sys.argv)
 pencere = Pencere()
 sys.exit(app.exec_())
