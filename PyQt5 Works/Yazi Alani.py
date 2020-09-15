@@ -16,6 +16,9 @@ class Pencere(QWidget):
 
         v_box.addWidget(self.yazi_alani)
         v_box.addWidget(self.temizle)
+        self.setWindowTitle("Yazi ALani")
+        self.setLayout(v_box)
+        self.show()
 
 
 
