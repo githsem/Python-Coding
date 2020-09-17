@@ -70,7 +70,6 @@ class Ui_Form(object):
             baslik = baslik.strip()
             baslik = baslik.replace("\n", "")
             baslik = baslik.strip("0123456789. ")
-
             rating = rating.strip()
             rating = rating.replace("\n", "")
 
