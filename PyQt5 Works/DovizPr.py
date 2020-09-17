@@ -2,6 +2,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import requests
 from bs4 import BeautifulSoup
 
+
 class Ui_Doviz(object):
     def setupUi(self, Doviz):
         Doviz.setObjectName("Doviz")
