@@ -85,8 +85,8 @@ class Ui_Doviz(object):
 
     def click(self):
         miktar = int(self.lineEdit.text())
-        euro = miktar*self.sonuceu
-        dolar = miktar*self.sonucdo
+        euro = miktar/self.sonuceu
+        dolar = miktar/self.sonucdo
         self.lineEdit_2.setText(str(euro))
         self.lineEdit_3.setText(str(dolar))
 
