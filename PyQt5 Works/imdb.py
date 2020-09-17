@@ -66,7 +66,6 @@ class Ui_Form(object):
         for baslik, rating in zip(basliklar, ratingler):
             baslik = baslik.text
             rating = rating.text
-
             baslik = baslik.strip()
             baslik = baslik.replace("\n", "")
             baslik = baslik.strip("0123456789. ")
