@@ -19,18 +19,21 @@ class Ui_Doviz(object):
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(Doviz)
         self.label_2.setGeometry(QtCore.QRect(20, 110, 291, 16))
-        
+
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
         font.setWeight(75)
+
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
+
         self.lineEdit = QtWidgets.QLineEdit(Doviz)
         self.lineEdit.setGeometry(QtCore.QRect(310, 110, 121, 21))
         self.lineEdit.setCursorPosition(0)
         self.lineEdit.setClearButtonEnabled(False)
         self.lineEdit.setObjectName("lineEdit")
+        
         self.label_3 = QtWidgets.QLabel(Doviz)
         self.label_3.setGeometry(QtCore.QRect(140, 220, 51, 21))
         font = QtGui.QFont()
