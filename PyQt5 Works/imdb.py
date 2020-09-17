@@ -71,7 +71,6 @@ class Ui_Form(object):
             baslik = baslik.strip("0123456789. ")
             rating = rating.strip()
             rating = rating.replace("\n", "")
-
             if float(rating) > sayi:
                 ekle = baslik + "    "+rating
                 self.textEdit.append(ekle)
