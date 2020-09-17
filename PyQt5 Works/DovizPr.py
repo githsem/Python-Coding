@@ -6,6 +6,7 @@ class Ui_Doviz(object):
     def setupUi(self, Doviz):
         Doviz.setObjectName("Doviz")
         Doviz.resize(512, 374)
+        
         self.label = QtWidgets.QLabel(Doviz)
         self.label.setGeometry(QtCore.QRect(80, 20, 331, 31))
         font = QtGui.QFont()
