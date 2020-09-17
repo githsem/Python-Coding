@@ -85,8 +85,8 @@ class Ui_Doviz(object):
 
     def click(self):
         miktar = int(self.lineEdit.text())
-        euro = miktar/self.sonuceu
-        dolar = miktar/self.sonucdo
+        euro = round(miktar/self.sonuceu,2)
+        dolar = round(miktar/self.sonucdo,2)
         self.lineEdit_2.setText(str(euro))
         self.lineEdit_3.setText(str(dolar))
 
@@ -106,6 +106,7 @@ class Ui_Doviz(object):
                 sonuce = j
         self.sonucdo = float(sonucd.replace(",", "."))
         self.sonuceu = float(sonuce.replace(",", "."))
+
 
 if __name__ == "__main__":
     import sys
