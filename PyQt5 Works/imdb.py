@@ -61,7 +61,6 @@ class Ui_Form(object):
 
         basliklar = soup.find_all("td", {"class": "titleColumn"})
         ratingler = soup.find_all("td", {"class": "ratingColumn imdbRating"})
-
         sayi = float(self.lineEdit.text())
         for baslik, rating in zip(basliklar, ratingler):
             baslik = baslik.text
