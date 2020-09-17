@@ -99,7 +99,7 @@ class Ui_Doviz(object):
         soup = BeautifulSoup(html_icerigi, "html.parser")
         isim = soup.find_all("span", {"class": "name"})
         kur = soup.find_all("span", {"class": "value"})
-        
+
         for i, j in zip(isim, kur):
             i = i.text
             j = j.text
