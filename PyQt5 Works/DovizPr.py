@@ -84,8 +84,8 @@ class Ui_Doviz(object):
 
     def click(self):
         miktar = int(self.lineEdit.text())
-        euro = miktar*self.sonuceur
-        dolar = miktar*self.sonucdol
+        euro = miktar*self.sonuceu
+        dolar = miktar*self.sonucdo
         self.lineEdit_2.setText(str(euro))
         self.lineEdit_3.setText(str(dolar))
 
@@ -94,7 +94,7 @@ class Ui_Doviz(object):
         response = requests.get(url)
         html_icerigi = response.content
         soup = BeautifulSoup(html_icerigi, "html.parser")
-        
+
         isim = soup.find_all("span", {"class": "name"})
         kur = soup.find_all("span", {"class": "value"})
         for i, j in zip(isim, kur):
@@ -104,10 +104,10 @@ class Ui_Doviz(object):
                 sonucd = j
             if i == "EURO":
                 sonuce = j
-        sonucdo = sonucd.replace(",", ".")
-        sonuceu = sonuce.replace(",", ".")
-        self.sonucdol = float(sonucdo)
-        self.sonuceur = float(sonuceu)
+
+        self.sonucdo = float(sonucd.replace(",", "."))
+        self.sonuceu = float(sonuce.replace(",", "."))
+
 
 if __name__ == "__main__":
     import sys
