@@ -53,7 +53,7 @@ class Ui_Doviz(object):
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        
+
         self.label_4.setFont(font)
         self.label_4.setObjectName("label_4")
         self.lineEdit_2 = QtWidgets.QLineEdit(Doviz)
@@ -68,6 +68,7 @@ class Ui_Doviz(object):
 
         self.retranslateUi(Doviz)
         QtCore.QMetaObject.connectSlotsByName(Doviz)
+
         self.veri_cek()
 
     def retranslateUi(self, Doviz):
@@ -93,6 +94,7 @@ class Ui_Doviz(object):
         response = requests.get(url)
         html_icerigi = response.content
         soup = BeautifulSoup(html_icerigi, "html.parser")
+        
         isim = soup.find_all("span", {"class": "name"})
         kur = soup.find_all("span", {"class": "value"})
         for i, j in zip(isim, kur):
