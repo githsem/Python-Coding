@@ -33,23 +33,27 @@ class Ui_Doviz(object):
         self.lineEdit.setCursorPosition(0)
         self.lineEdit.setClearButtonEnabled(False)
         self.lineEdit.setObjectName("lineEdit")
-        
+
         self.label_3 = QtWidgets.QLabel(Doviz)
         self.label_3.setGeometry(QtCore.QRect(140, 220, 51, 21))
+
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
+
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(Doviz)
         self.label_4.setGeometry(QtCore.QRect(270, 220, 61, 21))
+
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
+        
         self.label_4.setFont(font)
         self.label_4.setObjectName("label_4")
         self.lineEdit_2 = QtWidgets.QLineEdit(Doviz)
