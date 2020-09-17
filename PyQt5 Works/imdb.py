@@ -55,7 +55,7 @@ class Ui_Form(object):
 
     def veri_cek(self):
         url = "https://www.imdb.com/chart/top/?ref_=nv_mv_250"
-        
+
         response = requests.get(url)
         html_icerigi = response.content
         soup = BeautifulSoup(html_icerigi, "html.parser")
@@ -76,7 +76,7 @@ class Ui_Form(object):
             rating = rating.strip()
             rating = rating.replace("\n", "")
             if float(rating) > sayi:
-                ekle = baslik + "    "+rating
+                ekle = baslik + "   rating "+rating
                 self.textEdit.append(ekle)
 
 
