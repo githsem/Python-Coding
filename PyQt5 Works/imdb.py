@@ -53,7 +53,6 @@ class Ui_Form(object):
         self.label_2.setText(_translate("Form", "Rating Giriniz : "))
         self.pushButton.setText(_translate("Form", "Goster"))
 
-
     def veri_cek(self):
         url = "https://www.imdb.com/chart/top/?ref_=nv_mv_250"
         response = requests.get(url)
@@ -77,7 +76,7 @@ class Ui_Form(object):
             if float(rating) > sayi:
                 ekle = baslik + "   "+rating
                 self.textEdit.append(ekle)
-        
+
 
 if __name__ == "__main__":
     import sys
