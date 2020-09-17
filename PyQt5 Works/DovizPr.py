@@ -95,7 +95,6 @@ class Ui_Doviz(object):
         response = requests.get(url)
         html_icerigi = response.content
         soup = BeautifulSoup(html_icerigi, "html.parser")
-
         isim = soup.find_all("span", {"class": "name"})
         kur = soup.find_all("span", {"class": "value"})
         for i, j in zip(isim, kur):
@@ -105,10 +104,8 @@ class Ui_Doviz(object):
                 sonucd = j
             if i == "EURO":
                 sonuce = j
-
         self.sonucdo = float(sonucd.replace(",", "."))
         self.sonuceu = float(sonuce.replace(",", "."))
-
 
 if __name__ == "__main__":
     import sys
