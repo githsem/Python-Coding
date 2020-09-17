@@ -87,6 +87,7 @@ class Ui_Doviz(object):
         miktar = int(self.lineEdit.text())
         euro = round(miktar/self.sonuceu,2)
         dolar = round(miktar/self.sonucdo,2)
+        
         self.lineEdit_2.setText(str(euro))
         self.lineEdit_3.setText(str(dolar))
 
