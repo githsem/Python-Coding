@@ -73,9 +73,9 @@ class Ui_Form(object):
 
             rating = rating.strip()
             rating = rating.replace("\n", "")
-            
+
             if float(rating) > sayi:
-                ekle = baslik + "   "+rating
+                ekle = baslik + "    "+rating
                 self.textEdit.append(ekle)
 
 
