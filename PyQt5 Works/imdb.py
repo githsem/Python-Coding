@@ -77,6 +77,7 @@ class Ui_Form(object):
             if float(rating) > sayi:
                 ekle = baslik + "   "+rating
                 self.textEdit.append(ekle)
+                print(baslik)
 
 if __name__ == "__main__":
     import sys
