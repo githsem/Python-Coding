@@ -52,7 +52,7 @@ class Sarkilar():
 
         self.baglanti.commit()
 
-    def sure_hesapla(self, sarkilar):
+    def sure_hesapla(self):
 
         sorgu = "Select * From sarkilar"
 
@@ -65,5 +65,5 @@ class Sarkilar():
         else:
             sure=0
             for i in sarkilar:
-                sure += sarkilar[4]
+                sure += i[4]
         print("Toplam Sure : ",sure)
