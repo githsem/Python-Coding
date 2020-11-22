@@ -5,7 +5,7 @@ class Kuvvet3():
     def __iter__(self):
         return self
     def __next__(self):
-        if (self.kuvvet < self.max):
+        if (self.kuvvette < self.max):
             sonuc = 3 ** self.kuvvet
             self.kuvvet +=1
             return sonuc
