@@ -26,7 +26,7 @@ while True:
     if tahmin < sayi:
         print("Bilgiler Sorgulaniyor...")
         time.sleep(1)
-        print("Daha buyuk bir sayi giriniz...")
+        print("Daha buyuk bir sayi giriniz......")
         hak-=1
     elif tahmin > sayi:
         print("Bilgiler Sorgulaniyor...")
