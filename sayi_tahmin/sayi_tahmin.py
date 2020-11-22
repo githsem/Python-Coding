@@ -18,7 +18,7 @@ sayi = random.randint(1,40)
 hak=7
 
 while True:
-    tahmin = int(input("Tahmininiz : "))
+    tahmin =  int(input("Tahmininiz : "))
 
     if hak==0:
         print("Hakkiniz Bitti...")
