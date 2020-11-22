@@ -21,7 +21,7 @@ while True:
     tahmin = int(input("Tahmininiz : "))
 
     if hak==0:
-        print("Hakkiniz Bitti...")
+        print("Hakkiniz Bitti ...")
         break
     if tahmin < sayi:
         print("Bilgiler Sorgulaniyor...")
